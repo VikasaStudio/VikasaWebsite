@@ -1,0 +1,10 @@
+name: minifyCSS
+  uses:nizarmah/auto-minify@v2.0
+on:
+  push:
+    branches:
+    - main
+    
+  pull_request:
+    branches:
+    - main
