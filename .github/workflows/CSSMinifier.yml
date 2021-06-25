@@ -16,7 +16,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
+    - name: simple log
+      run: echo hello $PWD
+      
     - name: CSS Minifier
       uses: chand1012/action-css-minify@v1
       with:
