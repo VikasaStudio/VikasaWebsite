@@ -28,4 +28,4 @@ jobs:
     - name: CSS Minifier
       uses: chand1012/action-css-minify@v1
       with:
-        folder: ../css
+        folder: ./css/*
