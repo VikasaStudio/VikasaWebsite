@@ -1,17 +1,17 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-var animTimeline = gsap.timeline();
-//page1
-animTimeline.fromTo("#page-landing", {y: 0}, {y:'-90vh'});
-animTimeline.fromTo('#page-goOnline', {y:'100vh'}, {y:'-200vh'});
-animTimeline.fromTo('#page-expectMore', {y:'100vh'},{y:'-150vh'});
-animTimeline.fromTo('#page-expectMore', {opacity:1},{opacity:0} );
-animTimeline.fromTo('#page-landing', {opacity:1},{opacity:0});
-animTimeline.fromTo('#page-showcase', {y:'100vh'}, { y:'-50vh'});
-animTimeline.fromTo('#page-contactUs', {y:'100vh'}, { y:'0vh'});
+var animTimeline = gsap.timeline({
+  scrollTrigger:{
+    scrub:1.5,
+  }
+});
 
-ScrollTrigger.create({
-  animation: animTimeline,
-  scrub:true,
-})
+//page1
+animTimeline.fromTo("#page-landing", 10,{y: 0}, {y:'-90vh'});
+animTimeline.fromTo('#page-goOnline', 10, {y:'100vh'}, {y:'-250vh'},"-=6");
+animTimeline.fromTo('#page-expectMore', 10,{y:'100vh'},{y:'-150vh'},"-=5.5");
+animTimeline.fromTo('#page-expectMore', {opacity:1},{opacity:0});
+animTimeline.fromTo('#page-landing', {opacity:1},{opacity:0},"-=7");
+animTimeline.fromTo('#page-showcase', 10, {y:'100vh'}, { y:'-50vh'}, "-=6");
+animTimeline.fromTo('#page-contactUs', 10, {y:'100vh'}, { y:'0vh'});
