@@ -7,7 +7,7 @@ ScrollTrigger.matchMedia({
   "(min-width:320px) and (max-width:666px)": function(){
     var animTimeline = gsap.timeline({
       scrollTrigger:{
-        scrub:true
+        scrub:0.4
       }
     });
     animTimeline.fromTo("#page-landing", 10,{y: 0}, {y:'-90vh'});
