@@ -15,6 +15,7 @@
 section
 {
 	will-change: opacity,transform,translate;
+	content-visibility: auto;
 }
 body {
 	background-color: #fff !important;
@@ -33,7 +34,8 @@ nav {
 	z-index: -1;
 	left: 80%;
 	transform: translateX(-50%) translateY(-50%);
-	transition-duration: .5s
+	transition-duration: .5s;
+	content-visibility: auto;
 }
 #bg-filler {
 	position: absolute;
