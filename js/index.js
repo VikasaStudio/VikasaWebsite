@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 var animTimeline = gsap.timeline({
   scrollTrigger:{
-    scrub:1.5,
+    scrub:0.5,
   }
 });
 
