@@ -1623,13 +1623,18 @@ form {
 		background: #0c0363;
 		border-radius: 12px;
 		padding: 15px;
-		margin-top: 25px
+		margin-top: 25px;
+		left:50%;
+		transform: translate(-50%);
+	}
+	.card h2{
+		font-size: 2em;
 	}
 	.card .info {
 		margin-top: 60%
 	}
 	.card .info p {
-		font-size: 1em;
+		font-size: 1.2em;
 		transition-duration: .3s;
 		text-align: left
 	}
