@@ -11,6 +11,7 @@ ScrollTrigger.matchMedia({
       }
     });
     animTimeline.fromTo("#page-landing", 10,{y: 0}, {y:'-90vh'});
+    animTimeline.fromTo('#page-expectMore', 10,{opacity:'0'},{opacity:1},"-=10");
     animTimeline.fromTo('#page-goOnline', 10, {y:'100vh'}, {y:'-280vh'},"-=6");
     animTimeline.fromTo('#page-expectMore', 10,{y:'100vh'},{y:'-180vh'},"-=4.5");
     animTimeline.fromTo('#page-expectMore', {opacity:1},{opacity:0}, "-=1");
