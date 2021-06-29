@@ -15,7 +15,6 @@
 section
 {
 	will-change: opacity,transform,translate;
-	content-visibility: auto;
 }
 body {
 	background-color: #fff !important;
@@ -36,6 +35,7 @@ nav {
 	transform: translateX(-50%) translateY(-50%);
 	transition-duration: .5s;
 	content-visibility: auto;
+	will-change: opacity,transform,translate;
 }
 #bg-filler {
 	position: absolute;
@@ -45,7 +45,9 @@ nav {
 	top: 52%;
 	transform: translateY(-50%);
 	background: #fff;
-	z-index: -3
+	z-index: -3;
+	content-visibility: auto;
+	will-change: opacity,transform,translate;
 }
 #bg-square {
 	position: absolute;
@@ -54,7 +56,9 @@ nav {
 	top: -100px;
 	z-index: -2;
 	background: linear-gradient(180deg, #08042c 34.08%, #0b053e 60%, #1100a8 100%);
-	transform: skew(0deg, -16deg)
+	transform: skew(0deg, -16deg);
+	content-visibility: auto;
+	will-change: opacity,transform,translate;
 }
 #bg-square2 {
 	position: absolute;
@@ -66,7 +70,9 @@ nav {
 	right: 0;
 	left: 55vw;
 	background: linear-gradient(#30f, #2671c8 30%);
-	transform: rotate(-26deg)
+	transform: rotate(-26deg);
+	will-change: opacity,transform,translate;
+	content-visibility: auto;
 }
 #heading-powerWebsite {
 	font-size: 1.7em;
@@ -96,7 +102,8 @@ nav {
 	width: 100vw;
 	height: 35%;
 	clip-path: polygon(100% 25%, 100% 82%, 50% 100%, 0 82%, 0 0);
-	background: #08042c
+	background: #08042c;
+	will-change: opacity,transform,translate;
 }
 #bg-arrow h2 {
 	position: relative;
@@ -226,6 +233,7 @@ nav {
 	
 	left:50%;
 	transform:translateX(-50%);
+	will-change: opacity,transform,translate;
 }
 .card .info {
 	margin-top: 60%
