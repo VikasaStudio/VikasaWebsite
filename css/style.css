@@ -299,7 +299,6 @@ form {
 	flex-direction: column;
 	height: 100%;
 	padding: 24px;
-	box-shadow: 0 8px 16px rgba(28, 48, 165, 0.16);
   }
   .pricing-item-title {
 	font-weight: 500;
