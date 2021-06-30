@@ -7,18 +7,16 @@ ScrollTrigger.matchMedia({
   "(min-width:320px) and (max-width:666px)": function(){
     var animTimeline = gsap.timeline({
       scrollTrigger:{
-        scrub:0.4
+        scrub:true
       }
     });
-    animTimeline.fromTo("#page-landing", 10,{y: 0}, {y:'-90vh'});
-    animTimeline.fromTo('#page-expectMore', 10,{opacity:'0'},{opacity:1},"-=10");
-    animTimeline.fromTo('#page-goOnline', 10, {y:'100vh'}, {y:'-280vh'},"-=6");
-    animTimeline.fromTo('#page-expectMore', 10,{y:'100vh'},{y:'-180vh'},"-=4.5");
+    animTimeline.fromTo("#page-landing", 2, {y: 0}, {y:'-90vh'});
+    animTimeline.fromTo('#page-goOnline', 10, {y:'100vh'}, {y:'-280vh'},"-=1.5");
+    animTimeline.fromTo('#page-expectMore', 10,{y:'100vh'},{y:'-180vh'},"-=6.2");
     animTimeline.fromTo('#page-expectMore', {opacity:1},{opacity:0}, "-=1");
     animTimeline.fromTo('#page-landing', {opacity:1},{opacity:0},"-=7");
     animTimeline.fromTo('#page-showcase', 10, {y:'100vh'}, { y:'-70vh'}, "-=6");
-    animTimeline.fromTo('#page-contactUs', 10, {y:'100vh'}, { y:'0vh'}, "-=3");
-
+    animTimeline.fromTo('#page-contactUs', 2, {y:'100vh'}, { y:'0vh'}, "-=3");
   },
   
   "(min-width:667px) and (max-width:1823px)": function(){

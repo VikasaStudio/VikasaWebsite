@@ -21,7 +21,7 @@ body {
 	color: rgb(255, 255, 255) !important;
 	font-family: 'Sora', 'sans-serif' !important;
 	overflow-x: hidden;
-	height: 1500vh;
+	height: 1200vh;
 }
 nav {
 	z-index: 999
