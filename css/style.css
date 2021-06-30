@@ -1680,15 +1680,18 @@ form {
 		background-color: transparent
 	}
 	#contact_mail {
-		float: left
+		float: left;
+		font-size: 2em;
 	}
 	#contact_detail {
 		position: relative;
 		padding: 1px;
-		display: block
+		display: block;
+		
 	}
 	#contact_phone {
-		float: right
+		float: right;
+		font-size: 2em;
 	}
 	footer img {
 		width: 100%
