@@ -14,12 +14,14 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet"> 
   </head>
   <body>
 
     <nav class="navbar navbar-light bg-light">
-      <span class="navbar-brand mb-0">Vikasa</span>
+      <span class="navbar-brand mb-0" id='navText'>Vikasa</span>
     </nav>
 
     <main>
@@ -202,21 +204,23 @@
             </div>
           </div>
           <div class="row">
-              <!--<form class="col-md-6">
-                <div class="form-group">
-                  <input type="email" class="form-control" id="inputMail" aria-describedby="inputMail" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="inputMobile" aria-describedby="inputMobile" placeholder="Mobile">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="inputName" aria-describedby="inputName" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" id="inputMessage" aria-describedby="inputMessage" placeholder="Your Query"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </form>-->
+            <form action="https://formspree.io/f/xbjqkzdy" method="POST">
+              <div class='form-group'>
+                  <input type="email" class="form-control" name="_replyto" placeholder="Email" required>
+              </div>
+              <div class='form-group'>
+                <input type="text" class="form-control" name="fullname" placeholder="Your Name" required>
+              </div>
+              <div class='form-group'>
+                <input type="text" class="form-control" name="phone" placeholder="Mobile" required>
+              </div>
+              <div class='form-group'>
+                  <textarea class="form-control" name="message" placeholder="Message"></textarea>
+              </div>
+
+              <!-- your other form fields go here -->
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
           </div>
         </div>
       </footer>
